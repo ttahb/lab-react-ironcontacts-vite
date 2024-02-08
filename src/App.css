@@ -40,3 +40,65 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(39, 9, 9);
+  color: aliceblue;
+  box-shadow: 10px 5px 5px cornsilk;
+  padding: 1px 20px;
+}
+
+th {
+  font-size: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+
+td {
+  font-size: 1.5rem;
+  padding: 50px;
+  background-color: rgb(54, 51, 51);
+  box-shadow: 10px 5px 5px rgb(72, 69, 57);
+  text-align: start;
+}
+
+th {
+  padding: 2px 50px;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(249, 243, 236);
+  color: #000;
+  margin: 20px 2px 20px;
+  text-decoration: underline;
+  box-shadow: 2px 1px 1px cornsilk;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-image {
+  width: 200px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+
