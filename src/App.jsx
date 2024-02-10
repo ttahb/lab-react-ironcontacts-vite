@@ -46,10 +46,10 @@ function App() {
       <table className="table">
         <thead className="table-head">
           <tr>
-            <th>Picture</th> |
-            <th>Name</th> |
-            <th>Popularity</th> |
-            <th>Won Oscar</th> |
+            <th>Picture | </th>
+            <th>Name | </th>
+            <th>Popularity | </th>
+            <th>Won Oscar | </th>
             <th>Won Emmy</th>
           </tr>
         </thead>
