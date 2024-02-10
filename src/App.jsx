@@ -11,9 +11,13 @@ function App() {
     const copyOfContacts = [...contacts];
     if(copyOfContacts.length === contactData.length)
       return;
-    const newContactsList = contactData.slice(copyOfContacts.length, contactData.length);
-    copyOfContacts.push(newContactsList[ Math.floor(Math.random()*(newContactsList.length))]);
-    // console.log(`copyContacts length: ${copyOfContacts.length}`)
+    while(true && copyOfContacts.length != contactData.length){
+      const random = Math.floor(Math.random()*contactData.length);
+      if(!copyOfContacts.some(contact=> contact.id === contactData[random].id)){
+        copyOfContacts.push(contactData[random]);
+        break;
+      }
+    }
     setContacts(copyOfContacts);
   };
 
@@ -46,10 +50,10 @@ function App() {
       <table className="table">
         <thead className="table-head">
           <tr>
-            <th>Picture | </th>
-            <th>Name | </th>
-            <th>Popularity | </th>
-            <th>Won Oscar | </th>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Popularity</th>
+            <th>Won Oscar</th>
             <th>Won Emmy</th>
           </tr>
         </thead>
